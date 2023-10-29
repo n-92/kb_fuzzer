@@ -1,0 +1,10 @@
+App(
+    appid="kb_fuzzer",
+    name="KB Fuzzer",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="kb_fuzzer_app",
+    stack_size=2*1024,
+    order=50,
+    fap_icon="appicon.png",
+    fap_category="Tools",
+)

@@ -1,10 +1,15 @@
 App(
-    appid="kb_fuzzer",
-    name="KB Fuzzer",
+    appid="usb_keyboard_fuzz",
+    name="USB Fuzzer",
     apptype=FlipperAppType.EXTERNAL,
-    entry_point="kb_fuzzer_app",
-    stack_size=2*1024,
-    order=50,
-    fap_icon="appicon.png",
-    fap_category="Tools",
+    entry_point="usb_hid_kbfuzz_app",
+    stack_size=1 * 1024,
+    cdefines=["APP_USB_KEYBOARD"],
+    requires=[
+        "gui",
+    ],
+    order=60,
+    fap_icon="usb_keyboard_10px.png",
+    fap_category="Misc",
+    fap_icon_assets="assets",
 )
